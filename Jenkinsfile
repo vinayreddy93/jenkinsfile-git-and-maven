@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'make' 
+                sh 'echo hai vinay' 
                 archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
             }
         }
